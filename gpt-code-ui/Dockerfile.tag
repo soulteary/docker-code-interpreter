@@ -28,3 +28,4 @@ RUN python3 setup.py sdist bdist_wheel && \
     rm -rf /app/gpt_code_ui/webapp/static
 WORKDIR /app/gpt_code_ui/
 ENTRYPOINT gptcode
+RUN pip install dateparser matplotlib geopandas
